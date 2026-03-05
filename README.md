@@ -18,12 +18,41 @@ that enforce low-interference iteration, modular architecture, and skill-based t
 
 ---
 
+## Requirements
+
+Before using this kit, you should have:
+- Google Antigravity IDE installed.
+- A local clone of [antigravity-awesome-skills](https://github.com/sickn33/antigravity-awesome-skills) OR another skills collection you plan to route to.
+
+---
+
+## Setup Prerequisites
+
+1. **Install Antigravity and Gemini CLI**
+   - Follow the official Antigravity / Gemini setup guides for your OS.
+2. **Clone Skills Repository**
+   - Clone `antigravity-awesome-skills` somewhere on your machine.
+   - Note the absolute path to its `skills` directory (you’ll paste this into `GEMINI.md`).
+
+3. **Create or Update Global GEMINI.md**
+   - Ensure `~/.gemini/GEMINI.md` exists.
+   - Copy the kit’s `GEMINI.md` content into it, then replace `PROVIDE PATH TO AWESOME SKILL INSTALLATION` with your actual skills path.
+
+4. **Prepare a Project Repo**
+   - Create or open a project on GitHub.
+   - Add `AGENTS.md` and `project.md` from this kit to the repo root.
+   - Use an LLM to fill in the blanks in `project.md` based on your project idea, then commit it as the spec.
+
+Once these are done, opening the repo in Antigravity will load the global rules plus the project-specific templates automatically.
+
+---
+
 ## Quick Start
 
 1. Copy `GEMINI.md` to `~/.gemini/GEMINI.md` (or append if one exists)
 2. Open `GEMINI.md` and update the skills path placeholder:
    ```
-   ## Skill Self-Discovery System
+   ## Skill Self Discovery System
    You have access to a massive library of specialized skills located at:
    `PROVIDE PATH TO AWESOME SKILL INSTALLATION`
    ```
@@ -43,9 +72,9 @@ that enforce low-interference iteration, modular architecture, and skill-based t
 
 ## Design Principles
 
-- **Low interference**: agent works through a checklist step-by-step without asking unnecessary questions
-- **Spec-driven**: all goals, constraints, and acceptance criteria live in `project.md`, not in chat
-- **Skill-aware**: GEMINI.md points the agent to your local skills directory for self-directed tool selection
+- **Low interference**: agent works through a checklist step by step without asking unnecessary questions
+- **Spec driven**: all goals, constraints, and acceptance criteria live in `project.md`, not in chat
+- **Skill aware**: GEMINI.md points the agent to your local skills directory for self directed tool selection
 - **Fail fast**: hard rules for env validation, path safety, encoding, and Docker config are enforced globally
 
 ---
@@ -69,7 +98,7 @@ These issues are documented and guarded against in the included config files:
 
 - Agent context drift in long sessions
 - MCP tool hangups and silent terminal failures
-- Gemini over-planning instead of acting
+- Gemini over planning instead of acting
 - Model/gateway version mismatches
 - Context bloat in large repos
 
