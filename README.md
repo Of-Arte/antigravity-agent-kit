@@ -21,9 +21,23 @@ that enforce low-interference iteration, modular architecture, and skill-based t
 ## Quick Start
 
 1. Copy `GEMINI.md` to `~/.gemini/GEMINI.md` (or append if one exists)
-2. Copy `AGENTS.md` and `project.md` into the root of any new project repo
-3. Fill in the bracketed fields in `project.md` for your specific feature/migration
-4. Open the repo in Antigravity — the agent will load the rules and follow the spec automatically
+2. Open `GEMINI.md` and update the skills path placeholder:
+   ```
+   ## Skill Self-Discovery System
+   You have access to a massive library of specialized skills located at:
+   `PROVIDE PATH TO AWESOME SKILL INSTALLATION`
+   ```
+   Replace with the absolute path to your local [antigravity-awesome-skills](https://github.com/sickn33/antigravity-awesome-skills) installation. Example:
+   - Windows: `C:\Users\yourname\.agent\skills`
+   - macOS/Linux: `/home/yourname/.agent/skills`
+
+3. Copy `AGENTS.md` and `project.md` into the root of any new project repo
+4. **Fill in `project.md` using an LLM:**
+   - Paste the template into your preferred LLM (ChatGPT, Gemini, Claude, etc.)
+   - Give it a brief description of your project idea or feature goal
+   - Ask it to fill in all `[bracketed fields]` based on your context
+   - Review the output, then commit it to your repo as the agent's source of truth
+5. Open the repo in Antigravity — the agent will load the rules and follow the spec automatically
 
 ---
 
@@ -41,11 +55,11 @@ that enforce low-interference iteration, modular architecture, and skill-based t
 This kit assumes you have [antigravity-awesome-skills](https://github.com/sickn33/antigravity-awesome-skills)
 installed locally. GEMINI.md instructs the agent to:
 
-1. Read `BUNDLES.md` from your skills directory
+1. Read `BUNDLES.md` from your configured skills directory
 2. Select the most relevant bundle(s) for the current task
-3. Invoke only 3-5 skills at a time to prevent context dilution
+3. Invoke only 3–5 skills at a time to prevent context dilution
 
-Update the skills path in `GEMINI.md` to match your machine.
+**You must set your local skills path in `GEMINI.md` before this works.** See Quick Start step 2.
 
 ---
 
@@ -58,8 +72,6 @@ These issues are documented and guarded against in the included config files:
 - Gemini over-planning instead of acting
 - Model/gateway version mismatches
 - Context bloat in large repos
-
-See `docs/PAIN_POINTS.md` for the full breakdown and exact fix applied per issue.
 
 ---
 
