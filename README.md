@@ -14,7 +14,6 @@ that enforce low-interference iteration, modular architecture, and skill-based t
 | `GEMINI.md` | Global rules for Antigravity — loaded automatically at IDE startup |
 | `AGENTS.md` | Per-project agent roles, operating rules, and collaboration protocol |
 | `project.md` | Feature/migration spec template with ordered build steps and acceptance criteria |
-| `docs/PAIN_POINTS.md` | Documented common Antigravity failure modes with fixes baked into the config |
 
 ---
 
