@@ -17,8 +17,8 @@
 </div>
 A minimal, opinionated starter kit for building reliable coding agents in Google Antigravity IDE.
 
-Includes production-tested templates for `GEMINI.md`, `AGENTS.md`, and `project.md`
-that enforce low-interference iteration, modular architecture, and skill-based task routing.
+Includes templates for `GEMINI.md`, `AGENTS.md`, and `project.md`
+to support continous iteration, modular architecture, and skill-based task routing.
 
 ---
 
