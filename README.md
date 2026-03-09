@@ -1,5 +1,20 @@
-# antigravity-agent-kit
-
+<div align=center>
+   
+```
+░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
+░░  ██████╗  ██████╗ ██╗  ██╗    ██╗  ██╗██╗████████╗  ░░
+░░ ██╔═══██╗██╔════╝ ██║ ██╔╝    ██║ ██╔╝██║╚══██╔══╝  ░░
+░░ ███████║██║  ███╗ █████╔╝     █████╔╝ ██║   ██║     ░░
+░░ ██╔══██║██║   ██╗ ██╔═██╗     ██╔═██╗ ██║   ██║     ░░
+░░ ██║  ██║╚██████╔╝ ██║  ██╗    ██║  ██╗██║   ██║     ░░
+░░ ╚═╝  ╚═╝ ╚═════╝  ╚═╝  ╚═╝    ╚═╝  ╚═╝╚═╝   ╚═╝     ░░
+░░                                                        ░░
+░░         a n t i g r a v i t y - a g e n t - k i t    ░░
+░░      plan → execute → verify  //  ship w/ agents      ░░
+░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
+        
+```
+</div>
 A minimal, opinionated starter kit for building reliable coding agents in Google Antigravity IDE.
 
 Includes production-tested templates for `GEMINI.md`, `AGENTS.md`, and `project.md`
@@ -91,7 +106,7 @@ installed locally. GEMINI.md instructs the agent to:
 
 ---
 
-## Known Antigravity Pain Points (Pre-Resolved)
+## Known Antigravity Pain Points
 
 These issues are documented and guarded against in the included config files:
 
